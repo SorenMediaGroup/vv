@@ -135,6 +135,7 @@ For options and constants, please note the `::` as a seperator between the key a
 
 You can create as many named blueprints in this file as you would like, all with as many different settings as you'd like.
 
+When creating a site, the name you've specified (in this example, "sample") is what you'll need to specify to use this blueprint.
 
 ## Vagrant Proxy
 
@@ -150,6 +151,7 @@ Because vv knows where you VVV installation is, you can run it from anywhere. vv
 |`--update`|Updates vv to the latest stable version|
 |`--path`,	`-p`|Path to VVV installation|
 |`--force-path`, `-fp`|Override vv auto-VVV locating|
+|`--force-sites-folder`,`-fsf`|Override sites folder directory locating|
 |`--defaults`|Accept all default options and skip the wizard|
 
 ### Commands
@@ -183,12 +185,14 @@ Because vv knows where you VVV installation is, you can run it from anywhere. vv
 |`--username`|Admin username|
 |`--password`|Admin password|
 |`--email`|Admin email|
-|`--git-repo`|Git repo to clone as wp-content|
+|`--git-repo`,`-gr`|Git repo to clone as wp-content|
 |`--path`,	`-p`|Path to VVV installation|
 |`--force-path`, `-fp`|Override vv auto-VVV locating|
 |`--blank`|Creates blank VVV site, with no WordPress|
-|`--wpskeleton`, `--skel`|Creates a new site with the structure of [WP Skeleton](https://github.com/markjaquith/WordPress-Skeleton)`
-|`-db`,`--database`|Imports a local database export|
+|`--blank-with-db`|Creates a blank VVV site, with a database|
+|`--wpskeleton`, `-skel`|Creates a new site with the structure of [WP Skeleton](https://github.com/markjaquith/WordPress-Skeleton)`
+|`--database`,`-db`|Imports a local database export|
+|`--remove-defaults`,`-rd`|Removes default themes and plugins|
 
 ### Options for Site Removal
 |Option|Description|
@@ -226,4 +230,4 @@ Ping me on Twitter at [@bradparbs](http://twitter.com/bradparbs).
 ## Thanks
 
 Forked and based off of [vvv-site-wizard from Alison Barrett](https://github.com/aliso/vvv-site-wizard).
-Also thanks to @creativecoder, @jtsternberg, @tnorthcutt, @joehills, @gregrickaby, @leogopal for awesome contributions.
+Also thanks to [@creativecoder](http://github.com/creativecoder), [@jtsternberg](http://github.com/jtsternberg), [@tnorthcutt](http://github.com/tnorthcutt), [@joehills](http;//github.com/joehills), [@gregrickaby](http://github.com/gregrickaby), [@leogopal](http://github.com/leogopal) for awesome contributions.
